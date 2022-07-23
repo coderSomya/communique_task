@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="swiper.css">
+<link rel="stylesheet" href="style2.css">
+<script src="script2.js"></script>
+</head>
+
+<body>
+
+
+<div class="header"></div>
+<input type="checkbox" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">=</label>
+
+<div id="sidebarMenu">
+ <br><br>
+ <ul>
+     <li>JOB SEARCH</li>
+     <li>WORK FROM HOME</li>
+     <li>CAREER TIPS</li>
+     <li >PREMIUM SERVICES </li>
+     <li>MORE</li>
+     <li>JOBSEEKER LOGIN</li>
+     <li>FOR EMPLOYERS</li>
+ </ul>
+
+
+
+</div>
+
+
+<div class="top2">
+    <p>monster</p> 
+</div>
+
+
+
+<div class="top">
+    <div class="name">
+        MONSTER
+        <br>Find Better.Faster
+
+    </div>
+    <nav>
+        <li>JOB SEARCH</li>
+        <li>WORK FROM HOME</li>
+        <li>CAREER TIPS</li>
+        <li id="premium">PREMIUM SERVICES </li>
+        <li>MORE</li>
+        <li class="bordered_element">JOBSEEKER LOGIN</li>
+        <li class="bordered_element">FOR EMPLOYERS</li>
+    </nav>
+</div>
+
+
+
+<div class="container">
+    <p id="caption">500,000+ Jobs. Find Better.Faster</p>
+    <br>
+     <div class="portal">
+    <nav>
+        <li>All Jobs</li>
+        <li>Work From Home</li>
+        <li id="highlighted">Covid-19 Resources</li>
+        <li>Contract Jobs</li>
+        <li>Fresher Jobs</li>
+
+    </nav>    
+    <div class="search">
+        <img src="search.png" alt="">
+         <div class="search_bar" >Search by Skills, Company & Job Title 
+            
+         </div>
+      
+         
+         <button class="search_box">Search</button> 
+             
+        </div>
+        <p id="para">Trending Searches :Jobs in Delhi, Jobs in Mumbai, Jobs in Hyderabad, Jobs in Bangalore, Jobs in Chennai, Jobs in Pune, Jobs in Kolkata, Jobs in Lucknow</p>
+ 
+    </div>
+
+     <div class="extra">
+        <div class="left">
+            NEW TO MONSTER?
+        <br>
+        REGISTER WITH US
+        <br>
+        Or
+        <button class="resume">UPLOAD RESUME 
+            <br>
+            We will create your profile
+        </button>
+        </div>
+        <div class="right">
+
+            <h5>FREE JOB ALERT</h5>
+
+        Get an email on jobs matching your criteria
+    
+     <br>
+        No registration required 
+        <button id="job_alert">CREATE JOB ALERT</button>
+        </div>
+     </div>
+</div>    </div>
+
+ 
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="tcs.png" alt=""></div>
+      <div class="swiper-slide"><img src="icici.png" alt=""></div>
+      <div class="swiper-slide"><img src="cognizant.png" alt=""></div>
+      <div class="swiper-slide"><img src="genpact.png" alt=""></div>
+      <div class="swiper-slide"><img src="wipro.png" alt=""></div>
+      <div class="swiper-slide"><img src="zensar.png" alt=""></div>
+    
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    autoplay:{
+        delay:1500,
+        disableOnInteraction:false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+</body>
+</html>
